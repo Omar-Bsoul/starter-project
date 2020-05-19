@@ -1,0 +1,17 @@
+.navbar {
+  width: 100vw;
+
+  background-color: #1ab9a7;
+}
+
+.navbar-logo-container {
+  padding: 16px 16px 0 16px;
+  border-bottom: 1px solid #777777;
+}
+
+.navbar-logo {
+  width: 256px;
+  height: 96px;
+
+  background: url("http://www.ansonika.com/img/logo.png") no-repeat;
+}

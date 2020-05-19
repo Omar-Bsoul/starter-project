@@ -1,0 +1,14 @@
+.input {
+  width: 100%;
+  padding: 8px;
+  background-color: #fbfbfb;
+
+  border: 2px solid #d5d5d5;
+  outline: none;
+
+  transition: all 0.15s ease-in-out;
+}
+
+.input:focus {
+  border: 2px solid dodgerblue;
+}
