@@ -1,22 +1,22 @@
-.personal-info-form {
+.survey {
   position: relative;
 }
 
-.personal-info-form_background {
+.survey_background {
   width: 100vw;
   height: 300px;
 
   background-color: #1ab9a7;
 }
 
-.personal-info-form_info {
+.survey_info {
   width: 100vw;
 
   position: absolute;
   top: 64px;
 }
 
-.personal-info-form_title {
+.survey_title {
   margin: 0;
   color: #fff;
   text-align: center;
@@ -30,7 +30,7 @@
   color: red;
 }
 
-.personal-info-form_form {
+.survey_form {
   max-width: 768px;
   margin: 32px auto;
   background-color: white;
@@ -38,7 +38,7 @@
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
 }
 
-.personal-info-form_form_user-info-container {
+.survey_form_user-info-container {
   width: 80%;
   margin: 0 auto;
   padding: 16px;
@@ -49,7 +49,7 @@
   padding: 6px;
 }
 
-.personal-info-form_form_user-info-container_navigation {
+.survey_form_user-info-container_navigation {
   display: flex;
 
   justify-content: center;
