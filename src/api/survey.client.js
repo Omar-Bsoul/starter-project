@@ -1,8 +1,7 @@
+import { surveys as dummy_surveys } from ".";
+
 class SurveyClient {
-  surveys = {
-    key1: "aaa",
-    key2: "aaa",
-  };
+  surveys = dummy_surveys;
 
   getOne(id) {
     return new Promise((resolve, reject) => {

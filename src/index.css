@@ -14,6 +14,10 @@ code {
   align-items: center;
 }
 
+.col-3 {
+  flex: 0 0 25%;
+}
+
 .col-4 {
   flex: 0 0 33.33333333333333%;
 }
@@ -103,6 +107,6 @@ code {
 }
 
 .large-radio {
-  min-width: 24px;
-  min-height: 24px;
+  min-width: 16px;
+  min-height: 16px;
 }

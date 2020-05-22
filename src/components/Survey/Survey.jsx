@@ -7,6 +7,7 @@ import { UserProfileForm } from "..";
 
 export const Survey = ({ surveyId }) => {
   const [countries, setCountries] = useState([]);
+  const [currentStep, setCurrentStep] = useState(1);
 
   useEffect(() => {
     // componentDidMount...
@@ -29,19 +30,21 @@ export const Survey = ({ surveyId }) => {
         <div className="survey_form">
           <div style={{ backgroundColor: "#f3f3f3", borderBottom: "1px solid #55777777" }}>
             <div className="survey_form_user-info-container">
-              <ProgressBar currentStep="1" totalSteps="4" />
+              <ProgressBar currentStep={currentStep} totalSteps="4" />
             </div>
           </div>
 
-          <UserProfileForm countries={countries} />
+          {currentStep === 1 ? <UserProfileForm countries={countries} /> : <h1>Hello</h1>}
 
           <div style={{ backgroundColor: "#f3f3f3", borderTop: "1px solid #55777777" }}>
             <div className="survey_form_user-info-container">
               <div className="survey_form_user-info-container_navigation">
-                <Button disabled className="navigation-button">
+                <Button disabled={currentStep === 1} className="navigation-button" onClick={() => setCurrentStep(currentStep - 1)}>
                   {"<"} Backward
                 </Button>
-                <Button className="navigation-button">Forward {">"}</Button>
+                <Button className="navigation-button" onClick={() => setCurrentStep(currentStep + 1)}>
+                  Forward {">"}
+                </Button>
               </div>
             </div>
           </div>
